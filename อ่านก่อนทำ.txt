@@ -1,0 +1,1 @@
+เวลาสร้าง component ให้เอาไปใส่ใน Folder Components
