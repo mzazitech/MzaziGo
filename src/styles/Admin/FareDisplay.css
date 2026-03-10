@@ -1,0 +1,262 @@
+/* styles/FareDisplay.css */
+
+.fare-display-container {
+  background: linear-gradient(135deg, #fef3c7 0%, #feebc8 100%);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.fare-display-loading,
+.fare-display-error {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.fare-display-error {
+  color: #dc2626;
+  background-color: #fee2e2;
+  border-radius: 8px;
+}
+
+/* Header */
+.fare-info-header {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #f59e0b;
+}
+
+.trip-info,
+.vehicle-info {
+  margin-bottom: 10px;
+}
+
+.trip-info:last-child,
+.vehicle-info:last-child {
+  margin-bottom: 0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.info-value {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+/* Breakdown */
+.fare-breakdown {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.breakdown-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f59e0b;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fare-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.fare-item:last-child {
+  border-bottom: none;
+}
+
+.fare-item.peak-hours {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.fare-label {
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.fare-value {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.fare-divider {
+  height: 2px;
+  background-color: #fef3c7;
+  margin: 12px 0;
+}
+
+/* Total Fare */
+.fare-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.total-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.total-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+/* Note */
+.fare-note {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #f9fafb;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.minimum-note {
+  color: #d97706;
+  font-weight: 600;
+}
+
+/* Trip Details */
+.trip-details {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.details-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f59e0b;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item.peak {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.detail-label {
+  color: #4b5563;
+  font-weight: 500;
+  min-width: 70px;
+}
+
+.detail-value {
+  color: #1f2937;
+  font-weight: 500;
+  text-align: right;
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Actions */
+.fare-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-accept,
+.btn-decline {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-accept {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.btn-accept:hover {
+  background-color: #059669;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+.btn-decline {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.btn-decline:hover {
+  background-color: #dc2626;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fare-display-container {
+    max-width: 100%;
+  }
+
+  .fare-info-header {
+    padding: 12px;
+  }
+
+  .fare-breakdown,
+  .trip-details {
+    padding: 12px;
+  }
+
+  .info-row {
+    font-size: 11px;
+  }
+
+  .fare-item,
+  .detail-item {
+    font-size: 12px;
+  }
+
+  .total-value {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,262 @@
+.settings-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f59e0b;
+}
+
+.settings-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.bell-icon, .user-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.settings-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.settings-section {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.settings-section.general-info,
+.settings-section.account-info {
+  grid-column: 2;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f59e0b;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.upload-label {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.upload-label:hover {
+  border-color: #f59e0b;
+  background-color: #fffbeb;
+}
+
+.upload-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-link {
+  color: #3b82f6;
+  font-size: 12px;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.upload-link:hover {
+  color: #2563eb;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1f2937;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.btn-reset,
+.btn-done {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-reset {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.btn-reset:hover {
+  background-color: #fde68a;
+}
+
+.btn-done {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.btn-done:hover {
+  background-color: #d97706;
+}
+
+/* Profile Menu Dropdown Styles */
+.profile-menu-wrapper {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.profile-menu-item {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.profile-menu-item:last-child {
+  border-bottom: none;
+}
+
+.profile-menu-item:hover {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .settings-content {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-section.general-info,
+  .settings-section.account-info {
+    grid-column: 1;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-actions {
+    flex-direction: column;
+  }
+
+  .btn-reset,
+  .btn-done {
+    width: 100%;
+  }
+}

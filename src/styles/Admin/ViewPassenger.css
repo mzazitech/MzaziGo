@@ -1,0 +1,449 @@
+/* ViewPassenger.css */
+.view-passenger-container {
+  padding: 20px;
+  background-color: #fffaf0;
+  min-height: 100vh;
+}
+
+.view-passenger-header {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #ECBD35;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.back-to-list:hover {
+  background-color: #d9a821;
+  transform: translateX(-5px);
+}
+
+.view-passenger-header h2 {
+  margin: 0;
+  color: #ECBD35;
+  font-size: 24px;
+}
+
+/* Passenger Info Card */
+.passenger-info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.passenger-info-left {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.passenger-avatar-large {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.passenger-avatar-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.passenger-basic-info {
+  flex: 1;
+}
+
+.passenger-basic-info h3 {
+  font-size: 24px;
+  color: #1f2937;
+  margin: 0 0 15px 0;
+}
+
+.passenger-basic-info p {
+  margin: 8px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Identity Card */
+.passenger-info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-section h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ECBD35;
+}
+
+.identity-card {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.id-card-preview {
+  background: linear-gradient(135deg, #ECBD35 0%, #f59e0b 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.id-card-image-preview {
+  background: #f3f4f6;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.id-card-image-preview img {
+  width: 100%;
+  height: auto;
+}
+
+.id-title {
+  font-size: 12px;
+  margin: 0 0 10px 0;
+  opacity: 0.9;
+}
+
+.id-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+.id-qr {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f2937;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+.id-photo {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  width: 80px;
+  height: 100px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.id-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.id-type,
+.id-num {
+  font-size: 14px;
+  color: #374151;
+  margin: 8px 0;
+}
+
+/* Statistics Section */
+.statistics-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stats-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.period-select {
+  padding: 8px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+}
+
+.stats-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chart-box {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.chart-box h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 15px 0;
+}
+
+/* Details Tabs */
+.passenger-details-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-tabs {
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 12px 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: #6b7280;
+  transition: all 0.3s ease;
+  position: relative;
+  bottom: -2px;
+}
+
+.tab-button.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+}
+
+.tab-button:hover {
+  color: #667eea;
+}
+
+.riding-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-item {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.stat-value.cancel {
+  color: #ef4444;
+}
+
+/* Reviews */
+.review-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.reviews-list h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 15px 0;
+}
+
+.review-item {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.review-rating {
+  color: #f59e0b;
+  font-size: 14px;
+}
+
+.review-comment {
+  color: #374151;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.review-date {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Ride History */
+.ride-history-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.history-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.history-table-wrapper {
+  overflow-x: auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table thead {
+  background-color: #667eea;
+  color: white;
+}
+
+.history-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.history-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.history-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.history-table td {
+  padding: 12px;
+  font-size: 13px;
+  color: #374151;
+}
+
+.status-badge-ride {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge-ride.completed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .passenger-info-card {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .passenger-info-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .riding-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .history-table {
+    min-width: 700px;
+  }
+}
